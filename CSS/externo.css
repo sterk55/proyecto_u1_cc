@@ -1,0 +1,18 @@
+h1{
+    background-color: green;
+    color: blue;
+}
+
+
+
+#id_titulo{
+    background-color: rgb(41, 14, 18);
+    color: rgb(183, 207, 47);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.clase_titulos{
+    color: aqua;
+    background-color: black;
+}

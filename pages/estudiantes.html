@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <meta name="desceription" content="este es una pagina web de Estudiantes">
+    <meta name="author" content="Universidad Central del Ecuador">
+    <meta name="keywords" content="Matricula, estudiante, nuevo">
+    <link rel="stylesheet" href="../CSS/externo.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+
+    <section>
+        <!---->
+        <form action="https://api.gob.ec/insertaEstudiante" method="post">
+            <label id= "id_nombre" for="id_nombre_input"> Nombre: </label>
+            <input id= "id_nombre_input" type="text"><br>
+            <label id= "id_Fecha" for="">Fecha de Nacimiento:</label>
+            <input id= "id_Fecha_input" type="date"> <br>
+            <label id= "id_pass" for="">Contraseña:</label>
+            <input id= "id_pass_input" type="password"><br>
+            <label id= "id_mensaje" for="">Mensaje:</label>
+            <textarea name="id_mensaje_input" id="id_mensaje_input" ></textarea><br>
+            <button >Guardar</button>
+
+
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
