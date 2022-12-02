@@ -55,10 +55,11 @@ body{
 }
 
 .referencias{
-    width: 200px;
-    margin: 20px;
+    width: 250px;
+    
     float: left;
-    border: 1px solid black;
+    margin: 50px 1px;
+    /*border: 1px solid black;*/
 
 }
 
@@ -67,6 +68,12 @@ article{
     padding: 20px;
     margin-bottom: 25px;
     background-color: darkseagreen;
+}
+
+blockquote{
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 200px;
 }
 
 article footer{

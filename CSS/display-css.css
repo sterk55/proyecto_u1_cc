@@ -1,0 +1,12 @@
+#ele2{
+    float: right;
+
+}
+
+#ele3{
+    display: none;
+}
+
+.formulario{
+    display: grid;
+}
