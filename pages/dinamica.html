@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/funciones.js"></script>
+    <script>
+    function cambiarColor(){
+        document.getElementById('ele2').style.backgroundColor='blue'
+    }
+    
+    function sumar(num1, num2){
+        return num1 + num2
+    }
+
+    function restar(num1, num2){
+        return num1 -num2
+    }
+    </script>
+    
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +27,23 @@
     <section>
         <label id="ele1">Texto 1</label>
         <label id="ele2">Texto 2</label>
+        <img id="img1" src="../IMG/EC.jpg" alt="No se carga la imagen">
         <button onclick="document.getElementById('ele1').innerHTML='Modificaste el Texto'">Cambiar Texto</button>
-        <button onclick="document.getElementById('ele2').style.backgroundColor='blue'">Cambiar Color</button>
+        <button onclick="cambiarColor()">Cambiar Color</button>
+        <button onclick="document.getElementById('img1').src='../IMG/salsa-de-tomate.jpg'">Cambiar Imagen</button>
+        <input type="password" name="" id="pass1">
+        <button onclick="alert(document.getElementById('pass1').value)">Mostrar</button>
+        <br>
+        <input type="number" name="" id="number1">
+        <input type="number" id="number2">        
+        
+        <button onclick="alert(sumar(document.getElementById('number1').value , document.getElementById('number2').value))">Sumar</button>
+        <button onclick="alert(restar(document.getElementById('number1').value , document.getElementById('number2').value))">Restar</button>
+        <button onclick="alert(dividir(document.getElementById('number1').value , document.getElementById('number2').value))">Dividir</button>
+
+        <button onclick="document.getElementById('divi').innerHTML=(dividir(document.getElementById('number1').value , document.getElementById('number2').value))">Dividir2</button>
+        <label for="" id="divi"></label>
+
 
     </section>
     <footer></footer>
