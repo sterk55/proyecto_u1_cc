@@ -20,7 +20,7 @@
             <label for="">Primer Numero = </label>
             <label for="" id="idPrimerDigito"></label>
             <br>
-            <label for="">OPERACION =</label>
+            <label for="">Operacion =</label>
             <label for="" id="idOperacion"></label>
             <br>
             <label for="">Segundo Numero =</label>
@@ -29,6 +29,7 @@
             
            
             <br>
+
             <table id="idPrimeraTabla" style="margin: 0 auto ; display:block ;  ">
                 <tr>
                     <td><button onclick="document.getElementById('idPrimerDigito').innerHTML = document.getElementById('idPrimerDigito').innerHTML +'7'">7</button></td>
@@ -48,34 +49,35 @@
             </table>
             <table id="idSegundaTabla" style="display:none ; margin: 0 auto ;">
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'7'">7</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'8'">8</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'9'">9</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'4'">4</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'5'">5</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'6'">6</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'1'">1</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'2'">2</button></td>
+                    <td><button onclick="document.getElementById('idSegundoDigito').innerHTML = document.getElementById('idSegundoDigito').innerHTML +'3'">3</button></td>
                 </tr>
             </table>
             <table >
                 <tr>
-                    <td><button onclick="document.getElementById('idOperacion').innerHTML='+'">Sumar</button></td>
-                    <td><button  onclick="document.getElementById('idOperacion').innerHTML='-'">Restar</button></td>
+                    <td><button onclick="document.getElementById('idOperacion').innerHTML='+', sumar()">Sumar</button></td>
+                    <td><button  onclick="document.getElementById('idOperacion').innerHTML='-', restar()">Restar</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="document.getElementById('idOperacion').innerHTML='*'">Multiplicar</button></td>
-                    <td><button onclick="document.getElementById('idOperacion').innerHTML='/'">Dividir</button></td>
+                    <td><button onclick="document.getElementById('idOperacion').innerHTML='*', multiplicar()">Multiplicar</button></td>
+                    <td><button onclick="document.getElementById('idOperacion').innerHTML='/', dividir()">Dividir</button></td>
                 </tr>
             </table>
 
             <br>
-
+            <button onclick="total()">Total</button>
+            <br>
             <label for="" id="">Su Resultado es:</label>
             <label for="" id="resul"></label>
 
